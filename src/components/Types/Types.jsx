@@ -10,6 +10,7 @@ import tiramisu from "../../assets/tiramisu.jpg";
 import iced from "../../assets/iced.jpg";
 import muffins from "../../assets/muffins.jpg";
 import { Description } from "../Description/Description";
+import { Button } from "../Button/Button";
 
 export function Types() {
   const [activeSection, setActiveSection] = useState(1);
@@ -18,25 +19,24 @@ export function Types() {
     <>
       <h2 className={styles.header}>Popularne sposoby podawania kawy</h2>
       <div className={styles.buttons}>
-        <button
+        <Button
           onClick={() => setActiveSection(1)}
           disabled={activeSection === 1}
-          className={styles.button}
         >
           Bez mleka
-        </button>
-        <button
+        </Button>
+        <Button
           onClick={() => setActiveSection(2)}
           disabled={activeSection === 2}
         >
           Z mlekiem
-        </button>
-        <button
+        </Button>
+        <Button
           onClick={() => setActiveSection(3)}
           disabled={activeSection === 3}
         >
           Pod inną postacią
-        </button>
+        </Button>
       </div>
       {activeSection === 1 && (
         <section>

@@ -1,0 +1,15 @@
+.button {
+  padding: 8px;
+  width: 10%;
+  border: 1px solid var(--color-header);
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: rgb(237 225 209);
+}
+
+.button:hover {
+  color: ivory;
+  background-color: var(--color-header);
+  transition: 0.8s;
+  transform: scale(1.1);
+}
