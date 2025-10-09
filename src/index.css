@@ -1,0 +1,15 @@
+:root {
+  --color-header: rgb(214, 4, 4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: rgba(241, 200, 146, 0.752);
+}

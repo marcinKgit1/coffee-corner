@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-header);
+  text-shadow: 1px 1px 2px black;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.text {
+  margin-left: 5%;
+  padding: 8px;
+  width: 90%;
+  line-height: 1.5;
+  color: black;
+  background-color: rgb(237 225 209);
+  box-shadow: 1px 1px 1px 2px brown;
+}

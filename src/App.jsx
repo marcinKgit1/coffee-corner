@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.module.css";
 import { Heading } from "./components/Heading/Heading";
 import { Form } from "./components/Form/Form";
 import { Types } from "./components/Types/Types";

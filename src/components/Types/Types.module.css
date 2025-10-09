@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-header);
+  text-shadow: 1px 1px 2px black;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 12px;
+}

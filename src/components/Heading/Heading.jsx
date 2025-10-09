@@ -4,11 +4,11 @@ export function Heading() {
   return (
     <>
       <header>
-        <h1>Witaj w świecie kawy</h1>
-        <p>
+        <h1 className={styles.header}>Witaj w świecie kawy</h1>
+        <p className={styles.photo}>
           <img src={frog} alt="frog" height={400} />
         </p>
-        <p>
+        <p className={styles.text}>
           Kawa to jeden z najpopularniejszych napojów na świecie – codziennie
           sięgają po nią miliony ludzi, niezależnie od kultury czy miejsca
           zamieszkania. Jej historia sięga setek lat wstecz, a początki upraw

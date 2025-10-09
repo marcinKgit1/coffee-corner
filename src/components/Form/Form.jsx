@@ -19,8 +19,8 @@ export function Form({ onReviewSubmit }) {
     <>
       <hr />
 
-      <h2>Podziel się opinią✍️</h2>
-      <form onSubmit={handleSubmit}>
+      <h2 className={styles.header}>Podziel się opinią✍️</h2>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <div>
           <div>
             <label htmlFor="author">Autor</label>
@@ -33,6 +33,7 @@ export function Form({ onReviewSubmit }) {
             onChange={(event) => {
               setInputValue(event.target.value);
             }}
+            className={styles.input}
           />
         </div>
         <div>
@@ -46,11 +47,13 @@ export function Form({ onReviewSubmit }) {
             onChange={(event) => {
               setTextareaValue(event.target.value);
             }}
+            className={styles.textarea}
           ></textarea>
         </div>
         <button
           type="submit"
           disabled={inputValue === "" || textareaValue === ""}
+          className={styles.button}
         >
           Dodaj
         </button>

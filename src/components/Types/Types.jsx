@@ -15,11 +15,12 @@ export function Types() {
 
   return (
     <>
-      <h2>Popularne sposoby podawania kawy</h2>
-      <div>
+      <h2 className={styles.header}>Popularne sposoby podawania kawy</h2>
+      <div className={styles.buttons}>
         <button
           onClick={() => setActiveSection(1)}
           disabled={activeSection === 1}
+          className={styles.button}
         >
           Bez mleka
         </button>
@@ -39,7 +40,7 @@ export function Types() {
       {activeSection === 1 && (
         <section>
           <div>
-            <h3>Espresso</h3>
+            <h3 className={styles.header}>Espresso</h3>
             <p>
               <img src={espresso} alt="espresso" height={500} />
             </p>
@@ -53,7 +54,7 @@ export function Types() {
             </p>
           </div>
           <div>
-            <h3>Americano</h3>
+            <h3 className={styles.header}>Americano</h3>
             <p>
               <img src={americano} alt="americano" height={400} />
             </p>
@@ -63,7 +64,7 @@ export function Types() {
             </p>
           </div>
           <div>
-            <h3>Ristretto</h3>
+            <h3 className={styles.header}>Ristretto</h3>
             <p>
               <img src={ristretto} alt="ristretto" height={400} />
             </p>
@@ -81,7 +82,7 @@ export function Types() {
       {activeSection === 2 && (
         <section>
           <div>
-            <h3>Latte</h3>
+            <h3 className={styles.header}>Latte</h3>
             <p>
               <img src={latte} alt="latte" height={500} />
             </p>
@@ -93,7 +94,7 @@ export function Types() {
             </p>
           </div>
           <div>
-            <h3>Cappuccino</h3>
+            <h3 className={styles.header}>Cappuccino</h3>
             <p>
               <img src={cappuccino} alt="cappuccino" height={500} />
             </p>
@@ -107,7 +108,7 @@ export function Types() {
             </p>
           </div>
           <div>
-            <h3>Flat white</h3>
+            <h3 className={styles.header}>Flat white</h3>
             <p>
               <img src={flat} alt="flat white" height={500} />
             </p>
@@ -124,7 +125,7 @@ export function Types() {
       {activeSection === 3 && (
         <section>
           <div>
-            <h3>Tiramisu</h3>
+            <h3 className={styles.header}>Tiramisu</h3>
             <p>
               <img src={tiramisu} alt="tiramisu" height={400} />
             </p>
@@ -136,7 +137,7 @@ export function Types() {
             </p>
           </div>
           <div>
-            <h3>Kawa mrożona</h3>
+            <h3 className={styles.header}>Kawa mrożona</h3>
             <p>
               <img src={iced} alt="iced coffee" height={500} />
             </p>
@@ -147,7 +148,7 @@ export function Types() {
             </p>
           </div>
           <div>
-            <h3>Kawowe muffinki</h3>
+            <h3 className={styles.header}>Kawowe muffinki</h3>
             <p>
               <img src={muffins} alt="muffins" height={400} />
             </p>
