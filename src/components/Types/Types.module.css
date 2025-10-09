@@ -12,3 +12,8 @@
   align-items: center;
   padding: 12px;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+}
