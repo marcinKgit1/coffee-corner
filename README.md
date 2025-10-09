@@ -5,7 +5,11 @@
 Here's a simple app that helps you learn more about coffee consumption.
 Its purpose was to practice React mechanics. Enjoy!
 
-### Technologies used
+### Demo
+
+[website](https://vite-coffee-corner.netlify.app)
+
+#### Technologies used
 
 <li>React
 <li>Html
