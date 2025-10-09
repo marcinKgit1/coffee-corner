@@ -1,0 +1,9 @@
+.text {
+  margin-left: 5%;
+  padding: 8px;
+  width: 90%;
+  line-height: 1.5;
+  color: black;
+  background-color: rgb(237 225 209);
+  box-shadow: 1px 1px 1px 2px brown;
+}
