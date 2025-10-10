@@ -44,6 +44,7 @@
 
 .button:hover {
   background-color: rgb(231 3 3);
+  cursor: pointer;
 }
 
 .button:active {
