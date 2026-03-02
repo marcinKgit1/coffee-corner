@@ -1,52 +1,84 @@
 .header {
-  display: flex;
-  color: var(--color-header);
-  text-shadow: 1px 1px 1px black;
-  margin: 20px auto;
-  max-width: 900px;
-  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 30px;
 }
 
 .form {
-  margin-left: 32px;
-  border: 1px solid var(--color-header);
-  background-color: rgb(246 246 246);
-  max-width: 400px;
-  padding: 20px;
-  margin: 20px auto;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  max-width: 480px;
+  padding: 40px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.input {
-  border: 1px solid currentColor;
-  padding: 10px;
+.form label {
+  font-weight: 600;
+  color: var(--color-text-main);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input,
+.textarea {
   width: 100%;
-  max-width: 400px;
-  border-radius: 5px;
+  padding: 14px 16px;
+  border: 1px solid rgba(92, 59, 33, 0.2);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface-hover);
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--color-text-main);
+  transition: var(--transition);
 }
 
 .textarea {
-  border: 1px solid currentColor;
-  padding: 10px;
-  width: 100%;
-  max-width: 400px;
-  border-radius: 5px;
+  min-height: 120px;
+  resize: vertical;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(210, 121, 66, 0.15);
+  background-color: var(--color-surface);
 }
 
 .button {
+  margin-top: 10px;
   width: 100%;
-  border: none;
-  background-color: var(--color-header);
+  padding: 16px;
+  background-color: var(--color-primary);
   color: white;
-  padding: 20px;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.button:hover {
-  background-color: rgb(231 3 3);
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
 }
 
-.button:active {
-  background-color: rgb(171, 6, 6);
+.button:hover:not(:disabled) {
+  background-color: var(--color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.button:disabled {
+  background-color: var(--color-text-muted);
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
 }

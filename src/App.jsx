@@ -1,4 +1,4 @@
-import "./App.module.css";
+import styles from "./App.module.css";
 import { Heading } from "./components/Heading/Heading";
 import { Form } from "./components/Form/Form";
 import { Types } from "./components/Types/Types";
@@ -15,7 +15,7 @@ function App() {
   const [reviews, setReviews] = useState(initialReviews);
 
   return (
-    <>
+    <main className={styles.appContainer}>
       <Heading />
       <Types />
       <Form
@@ -29,7 +29,7 @@ function App() {
         }}
       />
       <Reviews reviews={reviews} />
-    </>
+    </main>
   );
 }
 
